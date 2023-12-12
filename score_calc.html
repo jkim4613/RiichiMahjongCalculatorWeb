@@ -1,0 +1,116 @@
+<!-- 
+Jinwoo Kim
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<title>Score Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header">
+
+<a href="index.html">
+<button onclick="">Back to homepage</button>
+</a>
+
+</div>
+
+<div id="main">
+
+<h1>Score Calculator</h1>
+
+<p>Below is a simplified score calculator you can use to get a general understanding of how much points you would earn from completing a hand with a combination of given conditions. You are also awarded and required to pay different amount of points based on whether you are the parent(equivalent to dealer) or the child. Note that some conditions cannot be fulfilled at the same time. Yakuman are special hands that override every other conditions. Once a yakuman is selected, the score will not change until unselected.</p>
+
+
+</div>
+<div id=container>
+
+<br>
+<h4> Conditions based on actions</h4>
+
+<button data-value="1" class="off" onclick="toggle(this)">Tsumo</button>
+<button data-value="1" class="off" onclick="toggle(this)">Riichi</button>
+<button data-value="1" class="off" onclick="toggle(this)">Ippatsu</button>
+<button data-value="1" class="off" onclick="toggle(this)">Haitei/Houtei</button>
+<button data-value="1" class="off" onclick="toggle(this)">Rinshan</button>
+<button data-value="1" class="off" onclick="toggle(this)">Chankan</button>
+<button data-value="2" class="off" onclick="toggle(this)">Double Riichi</button>
+
+
+<h4> Conditions based on hand composition</h4>
+
+<button data-value="1" class="off" onclick="toggle(this)">Bonus Tile</button>
+<button data-value="1" class="off" onclick="toggle(this)">Tanyao</button>
+<button data-value="1" class="off" onclick="toggle(this)">Yakuhai</button>
+<button data-value="1" class="off" onclick="toggle(this)">Pinfu</button>
+<button data-value="1" class="off" onclick="toggle(this)">Iipeikou</button>
+<button data-value="2" class="off" onclick="toggle(this)">Chanta</button>
+<button data-value="2" class="off" onclick="toggle(this)">Sanshoku</button>
+<button data-value="2" class="off" onclick="toggle(this)">Ittsu</button>
+<button data-value="2" class="off" onclick="toggle(this)">Toitoi</button>
+<button data-value="2" class="off" onclick="toggle(this)">Sanankou</button>
+<button data-value="2" class="off" onclick="toggle(this)">Sankantsu</button>
+<button data-value="2" class="off" onclick="toggle(this)">Chiitoi</button>
+<button data-value="2" class="off" onclick="toggle(this)">Honroutou</button>
+<button data-value="2" class="off" onclick="toggle(this)">Shousangen</button>
+<button data-value="3" class="off" onclick="toggle(this)">Honitsu</button>
+<button data-value="3" class="off" onclick="toggle(this)">Junchan</button>
+<button data-value="3" class="off" onclick="toggle(this)">Ryanpeikou</button>
+<button data-value="6" class="off" onclick="toggle(this)">Chinitsu</button>
+
+<h4> Bonus Tile</h4>
+
+<button data-value="1" class="off" onclick="toggle(this)">Bonus Tile
+	<select onchange="updateValue(this)">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13+</option>
+	</select>
+</button>
+
+<h4>List of Yakumans</h4>
+ 
+<button data-value="13" class="off" onclick="yakuman(this)">Kokushi Musou</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Suuankou</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Daisangen</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Shousuushii/Daisuushii</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Tsuiisou</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Chinroutou</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Ryuuiisou</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Chuurenpoutou</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Suukantsu</button>
+<button data-value="13" class="off" onclick="yakuman(this)">Tenhou/Chihou</button>
+
+<div id="">
+
+<p> Your score is: </p>
+
+<p id=display> </p>
+
+<br>
+
+<script type="text/javascript" src="score_calc.js"></script>
+
+</div>
+</div>
+
+<footer id="footprint">
+Created by Jinwoo Kim
+</footer>
+
+</body>
+</html>

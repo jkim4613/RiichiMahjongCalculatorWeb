@@ -1,0 +1,77 @@
+/*
+Jinwoo Kim
+CS351-01 Rahman
+Final Project
+*/
+
+/*default background style*/
+body {
+	background-image: url("resource\\vendor\\mahjong-1428364.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*for the table on score_chart.html*/
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+/*default button style*/
+button {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 2.5px;
+}
+
+
+/*footer text style*/
+footer {
+	font-size: 9pt;
+	font-style: italic;
+}
+
+/*button onclick style*/
+.on {
+	background-color: rgba(0, 128, 0, 0.75);
+	text-decoration-style: solid;
+}
+
+/*contains score calculator*/
+#container {
+	align-items: center;
+	padding: 15 px 15 px;
+	background-color: rgba(128, 128, 128, 0.9);
+}
+
+/*title header style*/
+#header {
+	background-color: rgba(128, 128, 128, 0.9);
+}
+
+/*description under buttons*/
+#under {
+	font-size: 9pt;
+	font-style: italic;
+}
+
+/*main body of text*/
+#main {
+	margin: 0;
+	display: flow-root;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+/*credit in the footer*/
+#footprint {
+	text-align: center;
+	color: rgba(128, 128, 128, 0.9);;
+}
+
+/*generated text from score calculator*/
+#display {
+	font-weight: bolder;

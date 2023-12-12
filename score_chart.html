@@ -1,0 +1,291 @@
+<!-- 
+Jinwoo Kim
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<title>Score Chart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header">
+
+<a href="index.html">
+<button onclick="">Back to homepage</button>
+</a>
+
+</div>
+
+<div id="main">
+
+<h1>Score Chart</h1>
+
+<p>Calculating the score of a hand in riichi mahjong is very difficult and counters in many different factors. The most important factor, however, are how many conditions your hand fulfills. Below are a list of the existing conditions in a conventional riichi mahjong game, their description, how much they are worth, and how likely you are to be able to complete the condition. Note that some conditions lose their worth if the hand is revealed before completion, for which the worth before the reveal and the worth after are separated by a slash in the chart.</p>
+
+<table>
+
+	<tr>
+		<th>Condition</th>
+		<th>Description</th>
+		<th>Count</th>
+		<th>Probability</th>
+	</tr>
+
+	<tr>
+		<td>Tsumo</td>
+		<td>Completing a hand by drawing the last tile without calling</td>
+		<td>1</td>
+		<td>17.6%</td>
+	</tr>
+
+	<tr>
+		<td>Riichi</td>
+		<td>Completing a hand after declaring riichi, one tile away from completing the hand. You pay 1000 points and during riichi, you may not alter your hand.</td>
+		<td>1</td>
+		<td>45.1%</td>
+	</tr>
+
+	<tr>
+		<td>Ippatsu</td>
+		<td>After declaring riichi, completing a hand within one turn.</td>
+		<td>1</td>
+		<td>10.2%</td>
+	</tr>
+
+	<tr>
+		<td>Pinfu</td>
+		<td>A hand with all sequences without calling.</td>
+		<td>1</td>
+		<td>19.9%</td>
+	</tr>
+
+	<tr>
+		<td>Iipeikou</td>
+		<td>A hand with two identical sequences.</td>
+		<td>1</td>
+		<td>4.75%</td>
+	</tr>
+
+	<tr>
+		<td>Haitei/Houtei</td>
+		<td>Completing the hand with the last tile.</td>
+		<td>1</td>
+		<td>0.31%/0.63%</td>
+	</tr>
+
+	<tr>
+		<td>Rinshan Kaihou</td>
+		<td>Completing a hand from the tile gained after declaring kan, 4 of a kind.</td>
+		<td>1</td>
+		<td>0.28%</td>
+	</tr>
+
+	<tr>
+		<td>Chankan</td>
+		<td>Completing a hand from the tile another player called kan by adding a tile to a pon.</td>
+		<td>1</td>
+		<td>0.05%</td>
+	</tr>
+
+	<tr>
+		<td>Tanyao</td>
+		<td>A hand with only tiles from 2-8.</td>
+		<td>1</td>
+		<td>21.4%</td>
+	</tr>
+
+	<tr>
+		<td>Yakuhai</td>
+		<td>A hand with a three of a kind of the seat/round wind tile or one of the three honor tiles.</td>
+		<td>1</td>
+		<td>40.0%</td>
+	</tr>
+
+	<tr>
+		<td>Double Riichi</td>
+		<td>Declaring riichi after the first draw.</td>
+		<td>2</td>
+		<td>0.19%</td>
+	</tr>
+
+	<tr>
+		<td>Chanta</td>
+		<td>A hand that contains 1, 9, or letter tile in every tile group.</td>
+		<td>2/1</td>
+		<td>1.24%</td>
+	</tr>
+
+	<tr>
+		<td>Sanshoku</td>
+		<td>A hand that contains the same sequence or 3 of a kind across the 3 different suits.</td>
+		<td>2/1</td>
+		<td>3.46%/0.05%</td>
+	</tr>
+
+	<tr>
+		<td>Ittsu</td>
+		<td>A hand that contains the sequences 123, 456, 789 in the same suit.</td>
+		<td>2/1</td>
+		<td>1.75%</td>
+	</tr>
+
+	<tr>
+		<td>Toitoi</td>
+		<td>A hand that only contains 3 of a kind</td>
+		<td>2</td>
+		<td>3.92%</td>
+	</tr>
+
+	<tr>
+		<td>Sanankou</td>
+		<td>A hand that contains 3 unrevealed 3 of kinds.</td>
+		<td>2</td>
+		<td>0.76%</td>
+	</tr>
+
+	<tr>
+		<td>Sankantsu</td>
+		<td>A hand that contains 3 4 of kinds.</td>
+		<td>2</td>
+		<td>0.005%</td>
+	</tr>
+
+	<tr>
+		<td>Chiitoi</td>
+		<td>A special hand composing of 7 pairs.</td>
+		<td>2</td>
+		<td>2.52%</td>
+	</tr>
+
+	<tr>
+		<td>Honroutou</td>
+		<td>A hand that only contains 1, 9, or letter tiles.</td>
+		<td>2</td>
+		<td>0.08%</td>
+	</tr>
+
+	<tr>
+		<td>Shousangen</td>
+		<td>A hand that contains 2 3 of kinds and a pair of the honor tiles.</td>
+		<td>2</td>
+		<td>0.15%</td>
+	</tr>
+
+	<tr>
+		<td>Honitsu</td>
+		<td>A hand that only contains one suit and letter tiles.</td>
+		<td>3/2</td>
+		<td>6.31%</td>
+	</tr>
+
+	<tr>
+		<td>Junchan</td>
+		<td>A hand that contains 1 or 9 in every tile group.</td>
+		<td>3/2</td>
+		<td>0.38%</td>
+	</tr>
+
+	<tr>
+		<td>Ryanpeikou</td>
+		<td>A hand that contains two cases of two identical sequences.</td>
+		<td>3</td>
+		<td>0.05%</td>
+	</tr>
+
+	<tr>
+		<td>Chinitsu</td>
+		<td>A hand that only contains tiles of the same suit.</td>
+		<td>6/5</td>
+		<td>0.94%</td>
+	</tr>
+
+	<tr>
+		<td>Kokushi Musou</td>
+		<td>A hand that contains one tile from every variety of 1, 9, and letter tiles. </td>
+		<td>Yakuman</td>
+		<td>0.043%</td>
+	</tr>
+
+	<tr>
+		<td>Suuankou</td>
+		<td>An unrevealed hand containing 4 3 of kinds.</td>
+		<td>Yakuman</td>
+		<td>0.049%</td>
+	</tr>
+
+	<tr>
+		<td>Daisangen</td>
+		<td>A hand containing 3 of kinds of every  honor tile.</td>
+		<td>Yakuman</td>
+		<td>0.039%</td>
+	</tr>
+
+	<tr>
+		<td>Shousuushii/Daisuushii</td>
+		<td>A hand containing 3 3 of kinds and 1 pair of wind tiles or 4 3 of kinds of wind tiles.</td>
+		<td>Yakuman</td>
+		<td>0.012%</td>
+	</tr>
+
+	<tr>
+		<td>Tsuuiisou</td>
+		<td>A hand only containing letter tiles.</td>
+		<td>Yakuman</td>
+		<td>0.008%</td>
+	</tr>
+
+	<tr>
+		<td>Chinroutou</td>
+		<td>A hand with only 1s and 9s.</td>
+		<td>Yakuman</td>
+		<td>0.00181%</td>
+	</tr>
+
+	<tr>
+		<td>Chuuren Poutou</td>
+		<td>A hand of the sequence 1112345678999 and one more tile of the same suit.</td>
+		<td>Yakuman</td>
+		<td>0.00045%</td>
+	</tr>
+
+	 <tr>
+	 	<td>Suukantsu</td>
+	 	<td>A hand with 4 4 of kinds.</td>
+	 	<td>Yakuman</td>
+	 	<td>0.000234%</td>
+	 </tr>
+
+	 <tr>
+	 	<td>Ryuuisou</td>
+	 	<td>A hand composed of only "green" tiles.</td>
+	 	<td>Yakuman</td>
+	 	<td>0.0011%</td>
+	 </tr>
+
+	 <tr>
+	 	<td>Tenhou/Chihou</td>
+	 	<td>A hand that's already completed with the first draw.</td>
+	 	<td>Yakuman</td>
+	 	<td>0.0003025%/0.00158%</td>
+	 </tr>
+
+</table>
+
+<br>
+
+<footer>
+	References:
+	“麻雀の役一覧（出現確率ランキング順）.” 麻雀ルールと役の解説　初心者のための麻雀講座, www2.odn.ne.jp/~cbm15900/html/y99.html. Accessed 28 July 2023. 	“List of Yaku.” List of Yaku - Japanese Mahjong Wiki, riichi.wiki/List_of_yaku. Accessed 28 July 2023. 
+</footer>
+
+<footer id="footprint">
+Created by Jinwoo Kim
+</footer>
+
+</div>
+
+</body>
+</html>
